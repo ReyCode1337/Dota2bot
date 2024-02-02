@@ -1,10 +1,11 @@
-package bot;
+package bot.functionbot;
 
 import java.awt.*;
 import java.awt.event.InputEvent;
 import java.awt.image.BufferedImage;
 
 public class AutoAccept{
+
     private final Robot robot;
     private final Color expectedColor;
     private final Rectangle searchArea;
@@ -24,7 +25,7 @@ public class AutoAccept{
     public void clickButton(int x, int y) {
         robot.mouseMove(x, y);
         robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
-        robot.delay(100); // Небольшая задержка для имитации реального действия
+        robot.delay(100);
         robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
     }
 

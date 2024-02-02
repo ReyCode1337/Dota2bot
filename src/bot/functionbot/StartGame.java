@@ -1,15 +1,16 @@
-package bot;
+package bot.functionbot;
 
 import java.awt.*;
 import java.awt.event.InputEvent;
 import java.awt.image.BufferedImage;
 
-public class Startgame{
+public class StartGame {
+
     private final Robot start_robot;
     private final Color start_expectedColor;
     private final Rectangle start_searchArea;
 
-    public Startgame(Color expectedColor, Rectangle searchArea) throws AWTException {
+    public StartGame(Color expectedColor, Rectangle searchArea) throws AWTException {
         this.start_robot = new Robot();
         this.start_expectedColor = expectedColor;
         this.start_searchArea = searchArea;
@@ -42,5 +43,6 @@ public class Startgame{
             }
         }
         return false;
+
     }
 }

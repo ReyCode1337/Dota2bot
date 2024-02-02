@@ -1,11 +1,13 @@
-package bot;
+package bot.functionbot;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
 
 public class AutoAttack{
-    int keyEvent = KeyEvent.VK_A;
+
     private final Robot AArobot;
+
+    int keyEvent = KeyEvent.VK_A;
 
     public AutoAttack() throws AWTException {
         this.AArobot = new Robot();
@@ -19,4 +21,4 @@ public class AutoAttack{
         AArobot.keyRelease(keyEvent);
     }
 
-    }
+}

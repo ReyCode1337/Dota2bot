@@ -1,4 +1,4 @@
-package bot;
+package bot.functionbot;
 
 import java.awt.*;
 import java.awt.event.InputEvent;
@@ -6,10 +6,12 @@ import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 
 public class PeekHero{
-    int keyEvents = KeyEvent.VK_P;
+
     private final Robot peek_robot;
     private final Color peek_expectedColor;
     private final Rectangle peek_searchArea;
+
+    int keyEvents = KeyEvent.VK_P;
 
     public PeekHero(Color expectedColor, Rectangle searchArea) throws AWTException {
         this.peek_robot = new Robot();
@@ -36,6 +38,7 @@ public class PeekHero{
         peek_robot.delay(100); // Небольшая задержка для имитации реального действия
         peek_robot.mouseRelease(InputEvent.BUTTON3_DOWN_MASK);
     }
+
     public void gg(){
         peek_robot.delay(30000);
         peek_robot.delay(30000);
@@ -57,5 +60,6 @@ public class PeekHero{
             }
         }
         return false;
+
     }
 }

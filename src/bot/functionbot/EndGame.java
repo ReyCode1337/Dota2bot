@@ -1,10 +1,11 @@
-package bot;
+package bot.functionbot;
 
 import java.awt.*;
 import java.awt.event.InputEvent;
 import java.awt.image.BufferedImage;
 
 public class EndGame{
+
     private final Robot end_robot;
     private final Color end_expectedColor;
     private final Rectangle end_searchArea;
@@ -38,5 +39,6 @@ public class EndGame{
             }
         }
         return false;
+
     }
 }

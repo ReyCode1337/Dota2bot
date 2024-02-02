@@ -21,10 +21,10 @@ public class Start extends JFrame {
         JButton but_finish = new JButton("Stop bot");
         container.add(but_finish);
 
-        but_start.addActionListener(new butEManager());
+        but_start.addActionListener(new ButEManager());
     }
 
-    static class butEManager implements ActionListener{
+    static class ButEManager implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
             DotaBot bot = new DotaBot();
@@ -35,6 +35,5 @@ public class Start extends JFrame {
             }
         }
     }
-
 
 }
